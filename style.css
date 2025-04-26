@@ -1,0 +1,133 @@
+body {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; 
+    box-sizing: border-box; 
+    overflow: auto;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #00ff00;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 600px; 
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.container ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.container ul li {
+    text-align: left;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.rules {
+    margin-bottom: 20px;
+}
+
+.rules ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.rules ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 0.8;
+}
+
+.agreement {
+    margin-bottom: 20px;
+}
+
+.agreement input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.explore-btn {
+    padding: 10px 20px;
+    border: 2px solid #00ff00;
+    background-color: #0a0a0a;
+    color: #00ff00;
+    cursor: pointer;
+}
+
+.explore-btn:disabled {
+    border-color: #555;
+    color: #555;
+    cursor: not-allowed;
+}
+
+.scenario-text {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+hr {
+    border: 1px solid #00ff00; 
+    width: 100%; 
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer-link {
+    color: #00ff00;
+    text-decoration: none;
+    display: block; 
+    margin: 5px 0; 
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; 
+    }
+
+    .title {
+        font-size: 1.5em; 
+    }
+
+    .explore-btn {
+        padding: 8px 16px; 
+    }
+
+    .scenario-text {
+        font-size: 0.9em;
+    }
+
+    .footer-link {
+        font-size: 0.8em; 
+    }
+}
